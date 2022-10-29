@@ -1,0 +1,152 @@
+.container-slider {
+  max-width: 1280px;
+  height: 35rem;
+  /* margin: 100px auto 0; */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 700px){
+  .container-slider {
+    margin: 100px 10px 0;
+  }
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.active-anim {
+  opacity: 1;
+}
+
+.btn-slide {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* background: #f1f1f1; */
+  background: transparent;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-slide :hover{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+    background-color: #f1f1f1;
+    transition: all 0.2s linear;
+}
+
+.btn-slide img {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+.prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+
+
+.container-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 10%;
+  border: 3px solid #f1f1f1;
+  margin: 0 5px;
+  background: #f1f1f1;
+}
+.dot.active {
+  background: rgb(32, 32, 32);
+}
+.autoSlide-button {
+  background: #f1f1f1;
+  color: #202020;
+  font-weight: 800;
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+.autoSlide-button:hover {
+  opacity: 1;
+}
+.container{
+    position: relative;
+  text-align: center;
+  color: rgb(235, 233, 233);
+  height: 500px;
+}
+.center{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+.banner1 h1{
+    color: white;
+    align-items: center;
+}
+.banner1 div{
+  width: 30rem;
+  height: 25rem;
+  border-radius: 20%;
+  border-color: #fffbe1;
+   /* background: rgba(248, 248, 248, 0.5); */
+ 
+  margin-top: 7rem;
+  align-items: center;
+  
+}
+.banner1d{
+  align-items: center;
+}
+.banner1d p{
+  color: white;
+  align-items: flex-end;
+ 
+}
+.hrb{
+  width: 100%;
+  background-color: #ffdd02;
+  height: 0.3rem;
+  border-bottom: 0;
+}

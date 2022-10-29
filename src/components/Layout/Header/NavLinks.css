@@ -1,0 +1,78 @@
+.NavLinks {
+  display: flex;
+  align-items: center;
+}
+
+.NavLinks li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+li:last-child {
+  margin-right: 3rem;
+}
+
+.li:last-child svg {
+  width: 1.72rem;
+  height: 1.72rem;
+  color: #fdbd59;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* on hover line animation */
+.li2 a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid #fdbd59;
+  animation: lineanimation 0.3s ease-in-out forwards;
+}
+
+.li2:last-child a:hover {
+  border-bottom: none;
+}
+
+li:last-child a:hover svg {
+  transform: translate3d(0, -0.2rem, 0);
+  color: #39b54a;
+  transition: 0.5s;
+}
+
+.ProfileLogo {
+  color: #fdbd59;
+}
+
+@media screen and (max-width: 920px) {
+  .NavLinks {
+    flex-direction: column;
+  }
+
+  .NavLinks li {
+    margin: 0.5rem 0;
+  }
+
+  li:first-child {
+    margin-top: 0;
+  }
+
+  li a {
+    font-size: 1rem;
+  }
+
+ /* selecting second last element of list */
+    li:nth-last-child(2) {
+        margin-bottom: 1rem;
+    }
+
+  .li:last-child {
+    display: none;
+    
+  }
+}

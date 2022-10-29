@@ -1,0 +1,48 @@
+.Container {
+  width: 100%;
+  font-family: "ABEEZEE", sans-serif;
+  margin: auto;
+}
+
+.hr {
+  width: 100%;
+  background-color: #ffdd02;
+  height: 4.58rem;
+  border-bottom: 0;
+}
+
+.BannerContainer hr:last-child {
+  height: 0.5rem;
+  background-color: #ffdd02;
+}
+
+.Banner {
+  height: 31rem;
+  background-color: rgb(144, 136, 136);
+}
+
+.ScrollTop{
+  position: fixed;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.ScrollTop:hover{
+  transform: translateY(-0.5rem);
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 550px) {
+ .ScrollTop{
+    bottom: -0.2rem;
+    right: -0.2rem;
+ }
+}
+
+
+

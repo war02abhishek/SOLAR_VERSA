@@ -1,0 +1,128 @@
+.ContentContainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Content {
+  align-items: center;
+  width: 50%;
+  padding: 2rem;
+}
+
+.Content h3 {
+  font-size: 1.8rem;
+  color: #39b54a;
+  margin-bottom: 1.5rem;
+}
+
+.Content h1 {
+  font-size: 2.1rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.Content p {
+  font-family: "Belleza", sans-serif;
+  font-size: 1.15rem;
+  color: #545454;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.ContentImage img {
+  margin-top: 1rem;
+  width: 24.2vmax;
+  
+}
+
+
+.ListContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+li h4 {
+  font-family: "belleza", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.li1 svg {
+  color: #39b54a;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.li1:last-child svg {
+  color: #39b54a;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Belleza", sans-serif;
+  padding: 0.8rem 1.6rem;
+  background-color: #fdbd59;
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.Button:hover {
+  background-color: #39b54a;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .ListContainer {
+    flex-direction: column;
+  }
+
+  li h4 {
+    font-size: 1.3rem;
+  }
+
+  .Content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .Content h1,
+  .Content h3 {
+    font-size: 1.75rem;
+  }
+
+  .ContentImage {
+    display: none;
+  }
+
+  .Button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,69 @@
+.NavContainer {
+  font-family: "Belleza", sans-serif;
+  background-color: #f7f7f7;
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  z-index: 1;
+}
+
+/* align log on left and links on right */
+
+.LeftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  margin-left: 0.5vmax;
+  width: 4.2rem;
+  cursor: pointer;
+}
+
+.LogoText {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.RightContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* on hover line animation */
+@keyframes lineanimation {
+  0% {
+    border-bottom-width: 0%;
+  }
+  100% {
+    border-bottom-width: 100%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .NavContainer {
+    flex-direction: column;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .LeftContainer {
+    margin-bottom: 0.2rem;
+  }
+
+  .LogoText {
+    margin-left: 0;
+  }
+
+  .RightContainer {
+    flex-direction: column;
+  }
+}

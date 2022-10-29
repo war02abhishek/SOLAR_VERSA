@@ -1,0 +1,58 @@
+.ServiceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 3rem;
+  box-sizing: border-box;
+  border-radius: 2rem;
+}
+
+.DomesticService {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.ServiceTitle {
+  font-size: 2.1rem;
+  color: #000;
+  padding-top: 1rem;
+}
+
+.CommercialService {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.ServiceCardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Underline {
+  border: 0;
+  width: 22%;
+  background-color: #ffdd02;
+  height: 0.3em;
+  border-radius: 0.3em;
+  margin: 1rem 0rem 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .ServiceCardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

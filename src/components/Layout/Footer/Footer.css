@@ -1,0 +1,261 @@
+.FooterContainer {
+  color: #ffffff;
+  /* background color gradient of color 191939 */
+  background: #191939;
+  background: -moz-linear-gradient(top, #191939 0%, #191939 100%);
+  background: -webkit-linear-gradient(top, #191939 0%, #191939 100%);
+  background: linear-gradient(to bottom, #191939 0%, #191939 100%);
+  font-family: "belleza", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3.5rem 0 1em;
+}
+
+.FooterHr {
+  width: 30%;
+  border: 0;
+  background-color: #fdbd59;
+  height: 0.2em;
+  border-radius: 0.3em;
+  margin: 0.5rem 0rem 1rem;
+  text-align: center;
+}
+
+.LeftFooter {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FooterLogo {
+  width: 3rem;
+  padding: 0rem 0.5rem 0rem;
+  border-radius: 50%;
+}
+
+.LogoTextTitle {
+  font-size: 1.65rem;
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.FooterDescription {
+  font-family: "Belleza", sans-serif;
+  font-size: 1rem;
+  color: #bababa;
+  line-height: 1.5;
+  margin: 0rem 1rem 1rem;
+}
+
+.SocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0.5rem 0rem;
+}
+
+.SocialMedia a {
+  color: #bababa;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.SocialMedia a:hover {
+  color: #fdbd59;
+}
+
+.CenterFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CenterFooterTitle {
+  font-size: 1.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.CenterHr {
+  width: 50%;
+  border: 0;
+  background-color: #fdbd59;
+  height: 0.2em;
+  border-radius: 0.3em;
+  margin: 0.5rem 0rem 0rem;
+  text-align: center;
+}
+
+.UsefulLinks a {
+  text-align: left;
+  font-size: 1rem;
+  color: #bababa;
+  margin: -0.2rem 0rem -0.2rem 0rem;
+}
+
+.UsefulLinks a:hover {
+  color: #fdbd59;
+}
+
+.RightFooter {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+
+.RightFooterList {
+  padding-top: 1rem;
+}
+
+.RightFooterTitle {
+  font-size: 1.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.RightHr {
+  width: 30%;
+  border: 0;
+  background-color: #fdbd59;
+  height: 0.2em;
+  border-radius: 0.3em;
+  margin: 0.5rem 0rem 0rem;
+  text-align: center;
+}
+
+.RightFooterElement {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #bababa;
+  font-family: "Belleza", sans-serif;
+}
+
+.RightFooterIcon {
+  font-size: 1.3rem;
+  margin: 0rem 1rem 0rem -1rem;
+  color: #fdbd59;
+}
+
+.RightFooterDescription {
+  font-size: 1rem;
+  color: #bababa;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.Telephone {
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.Location {
+  font-size: 1rem;
+}
+
+.LocationIcon {
+  font-size: 4.5rem;
+}
+
+.RightFooterDescription:hover {
+  color: #fdbd59;
+}
+
+.FooterBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0rem 1rem;
+}
+
+.FooterBottomHr {
+  width: 90%;
+  border: 0;
+  background-color: #bababa;
+  height: 0.2em;
+  border-radius: 0.3em;
+  margin: 0.5rem 0rem 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.FooterBottomText {
+  font-size: 0.9rem;
+  color: #bababa;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.MobileSocial{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 950px) {
+  .LocationIcon {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Footer {
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  .LeftFooter {
+    display: none;
+  }
+  
+
+  .CenterFooter {
+    display: none;
+  }
+
+  .RightFooter {
+    width: 75%;
+  }
+
+  .CenterFooterTitle {
+    font-size: 1.5rem;
+  }
+
+  .MobileSocial{
+    display: flex;
+  }
+
+  .RightFooterTitle {
+    font-size: 1.3rem;
+  }
+
+  .RightHr {
+    margin-bottom: 1rem;
+  }
+
+  .LocationIcon{
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width:450px){
+    .LocationIcon{
+    font-size: 2.5rem;
+    }
+}
